@@ -1,0 +1,482 @@
+body {
+  font-family: "Lato";
+  color: #424551;
+  line-height: 160%;
+}
+
+header {
+  margin-bottom: 15px;
+  background: url("../img/background.png") no-repeat;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.header-block__container {
+  
+}
+
+.header-block__menu{
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.header-block__menu ul::before{
+  content: "";
+  background: url("../icons/logo.svg") no-repeat 0 0 / contain;
+  display: inline-block;
+  width: 130px;
+  height: 22px;
+  margin-right: 60px;
+  margin-bottom: -5px;
+}
+
+.header-block__menu ul li{
+  display: inline-block;
+}
+
+.header-block__menu ul li:nth-child(2){
+  color: #FF3F3A;
+}
+
+
+.header-block__menu ul>li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.main-block__about {
+  margin-bottom: 200px;
+}
+.main-block__title,
+.curator-name
+{
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1E212C;
+  margin-bottom: 40px;
+}
+
+.curator-name {
+  margin-bottom: 16px;
+}
+.main-block__text {
+  margin-bottom: 50px;
+}
+.main-block__list-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1E212C;
+  margin-bottom: 25px;
+}
+/* .main-block__list-text li{
+  padding-left: 32px;
+  min-height: 26px;
+  background: url("../icons/check.png") no-repeat 0 6px / 16px;
+} */
+
+.main-block__list-text ul{
+  max-width: 615px;
+}
+
+.main-block__list-text li::before  {
+  content: "";
+  display: inline-block;
+  background: url("../icons/check.svg") no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  margin-left: -32px;
+  padding-left: 32px;
+  margin-bottom: -2px;
+}
+
+.main-block__list-text li{
+  padding-left: 32px;
+  min-height: 26px;
+}
+
+.main-block__list-text li:hover::before {
+  box-shadow: 1px 1px 2px rgb(43, 39, 39);
+  background: url("../icons/hover.svg") no-repeat 0 0 / contain;
+}
+
+.main-block__curator-work h5{
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.main-block__curator-work p:last-child {
+  font-size: 20px;
+  line-height: 150%;
+  color: #787A80;
+}
+
+.main-block__curator-work,
+.main-block__curator-skils
+{
+  margin-bottom: 32px;
+}
+
+
+
+.main-block__curator-skils li{
+  padding-left: 24px;
+  min-height: 26px;
+}
+
+/* .main-block__curator-skils ul li:first-child {
+  background: url("../icons/Star.png") no-repeat 0 5px / 16px;
+}
+
+.main-block__curator-skils ul li:last-child {
+  background: url("../icons/Play.png") no-repeat 0 5px / 16px;
+}
+
+.main-block__curator-skils ul li:nth-child(2) {
+  background: url("../icons/Profile.png") no-repeat 0 5px / 16px;
+} */
+
+.main-block__curator-skils ul li:first-child::before {
+  content: "";
+  display: inline-block;
+  background: url("../icons/Star.svg") no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  padding-left: 24px;
+  margin-left: -24px;
+}
+
+.main-block__curator-skils ul li:nth-child(2):before {
+  content: "";
+  display: inline-block;
+  background: url("../icons/Play.svg") no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  margin-left: -24px;
+  padding-left: 24px;
+}
+
+.main-block__curator-skils ul li:last-child::before {
+  content: "";
+  display: inline-block;
+  background: url("../icons/Profile.svg") no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  margin-left: -24px;
+  padding-left: 24px;
+}
+
+.main-block__curator-skils ul>li:hover::before {
+  box-shadow: 1px 1px 2px rgb(43, 39, 39);
+  background: url("../icons/hover.svg") no-repeat 0 0 / contain;
+}
+
+.main-block__curator-skils ul {
+  max-width: 615px;
+}
+
+.main-block {
+  margin-bottom: 150px;
+}
+
+
+.footer-blok__container {
+  text-align: center;
+}
+
+.footer-blok__practice {
+  max-width: 400px;
+  margin: 0 auto;
+  background: yellow;
+  padding: 15px 0;
+  margin-bottom: 25px;  
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30px;
+  border-radius: 10px;
+  color: rgb(16, 19, 199);
+  box-shadow: 2px 2px 2px 2px #8881eb, inset 0px 0px 10px 1px #c9d877;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8, 2px 3px 2px rgba(206,89,55,0);
+}
+
+
+.footer-blok__practice:hover {
+  box-shadow: 1px 1px 1px 1px #8881eb, inset 0px 0px 5px 1px #c9d877;
+  font-size: 32px;
+
+}
+
+.footer-blok__practice:active {
+  box-shadow: 2px 2px 2px 2px #8881eb, inset 0px 0px 10px 1px #c9d877;
+  color: rgb(225, 238, 113);
+  background: rgb(78, 78, 221);
+}
+
+
+.footer-blok__practice a:visited {
+  color: rgb(107, 231, 107);
+}
+
+.footer-blok__practice a:focus {
+  color: #000;
+}
+
+.footer-blok__sport {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.footer-blok__sport h2{
+  display: inline-block;
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background: rgb(230, 219, 219);
+  box-shadow: 2px 3px 0px #000, inset 1px 1px 5px #fff;
+}
+
+.footer-blok__sport h2:hover{
+  color: blue;
+  text-decoration: underline;
+  margin-bottom: -15px;
+}
+
+.footer-blok__sport h2:active {
+  box-shadow: 0 1px 2px #000, inset 1px 1px 5px #fff;
+  color: blue;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 700;
+  padding:9px;
+  
+}
+
+.footer-blok__sport ul{
+  display: none;;
+}
+
+.footer-blok__sport h2:active + ul{
+  display: block;
+  border: 1px solid #000;
+  background: url("../img/orig_597596.jpg") no-repeat center 0 / 600px;
+  font-size: 16px;
+  color: white;
+  min-height: 400px;
+  padding-top: 20%;
+}
+
+
+.footer-blok__sport ul:hover{
+  display: block;
+  background: url("../img/orig_597596.jpg") no-repeat center 0 / 600px;
+  font-size: 0px;
+  color: white;
+  min-height: 400px;
+  padding-top: 20%;
+}
+
+.footer-blok__sport li:hover {
+  display: inline-block;
+  color: rgb(0, 26, 255);
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 5px;
+  background: rgba(179, 169, 169, 0.884);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgb(221, 122, 122), inset 1px 1px 5px #fff; 
+  }
+
+  .footer-blok__game {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+  }
+
+  .footer-blok__game p:first-child{
+    display: inline-block;
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 25px;
+    background: rgb(238, 93, 93);
+    box-shadow: 2px 3px 0px #000, inset 1px 1px 5px rgb(173, 31, 31);
+  }
+
+  
+  .footer-blok__game p:nth-child(2){
+    background: green;
+    min-height: 30px;
+    max-width: 220px;
+    margin-left: 200px;
+  }
+
+  .footer-blok__game p:nth-child(3){
+    background: green;
+    min-height: 30px;
+    max-width: 200px;
+    margin-left: 10px;
+  }
+
+  .footer-blok__game p:nth-child(4){
+    background: green;
+    min-height: 70px;
+    max-width: 20px;
+    margin-left: 10px;
+  }
+
+  .footer-blok__game p:nth-child(5){
+    background: green;
+    min-height: 20px;
+    max-width: 700px;
+    margin-left: 10px;
+  }
+
+  .footer-blok__game p:nth-child(6){
+    background: green;
+    min-height: 100px;
+    max-width: 10px;
+    margin-left: 700px;
+  }
+
+  .footer-blok__game p:nth-child(7){
+    background: rgb(37, 39, 37);
+    min-height: 10px;
+    margin-left: 700px;
+    max-width: 100px;
+  }
+   
+  .footer-blok__game p:nth-child(8){
+    background: green;
+    min-height: 100px;
+    max-width: 10px;
+    margin-left: 790px;
+  }
+  .footer-blok__game p:nth-child(9){
+    background: red;
+    min-height: 30px;
+    max-width: 1000px;
+    margin-left: 230px;
+  }
+
+  .footer-blok__game p:nth-child(10){
+    background: blueviolet;
+    min-height: 100px;
+    max-width: 15px;
+    margin-left: 230px;
+  }
+  
+  .footer-blok__game p:nth-child(11){
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 25px;
+    background: rgb(238, 93, 93);
+    box-shadow: 2px 3px 0px #000, inset 1px 1px 5px rgb(173, 31, 31);
+  }
+
+  .footer-blok__game p:not(:first-child){
+    visibility: hidden;
+  }
+
+  .footer-blok__game p:first-child:hover + p:nth-child(2) {
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(2):hover{
+    visibility: visible;
+  }
+  .footer-blok__game p:nth-child(2)::before{
+    content: "";
+    color: #000;
+  }
+
+
+  .footer-blok__game p:nth-child(2):hover + p:nth-child(3){
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(3):hover{
+    visibility: visible;
+  }
+  
+  .footer-blok__game p:nth-child(3):hover + p:nth-child(4){
+    visibility: visible;
+  }
+  .footer-blok__game p:nth-child(4):hover{
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(4):hover + p:nth-child(5){
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(5):hover{
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(5):hover + p:nth-child(6){
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(6):hover{
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(6):hover + p:nth-child(7){
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(7):hover{
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(7):hover + p:nth-child(8){
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(8):hover{
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(8):hover + p:nth-child(9){
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(9):hover{
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(9):hover + p:nth-child(10){
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(10):hover{
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(10):hover + p:nth-child(11){
+    visibility: visible;
+  }
+
+  .footer-blok__game p:nth-child(11):hover{
+    visibility: visible;
+  }
+
+
